@@ -1,0 +1,8 @@
+Conclusiones de las pruebas realizadas:
+
+1. Manejo de código de estado: El servicio actualmente devuelve un código de estado HTTP 200 para todas las respuestas
+esto incluso en las que deberia renornar un código de error. Esto no sigue las mejores practicas
+2.Importancia de los asserts: Debido a la respuesta uniforme del servidor, es esencial implementar aserciones en las
+pruebas automaticas para validar las respuestas basándose en el contenido
+3.Propuesta de mejora: Una mejora significante seria implementar un corecto uso de los códigos de estado HTTP para
+diferenciar las respuestas exitosas de las erróneas
